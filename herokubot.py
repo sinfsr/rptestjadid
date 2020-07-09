@@ -3,6 +3,8 @@ import os
 
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
+dp = updater.dispatcher
+
 
 def start(bot, update):
     chat_id = update['message']['chat']['id']
@@ -19,7 +21,8 @@ dp.add_handler(CommandHandler('start' , start ))
 if __name__ == "__main__":
     # Set these variable to the appropriate values
     TOKEN = "1139770167:AAErOC1_mzcX3mOl671nu2DOTUV9ubh8V28"
-    NAME = "realpanda"
+    NAME = "pandayemaman"
+
 
     # Port is given by Heroku
     PORT = os.environ.get('PORT')
