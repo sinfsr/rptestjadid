@@ -37,6 +37,9 @@ def echo(bot, update):
         time.sleep(2)
         element1 = driver.find_element_by_link_text(sahm)
         element1.click()
+        url = element1.get_attribute('href')
+        driver.get(url)
+        time.sleep(1)
         text = driver.find_element_by_tag_name("body").text
         update.effective_message.reply_text(text)
     except:
