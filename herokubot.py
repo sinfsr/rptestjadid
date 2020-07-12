@@ -2,6 +2,8 @@ import logging
 import os
 from selenium import webdriver
 import time
+
+from selenium.webdriver.remote.webelement import WebElement
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 from selenium.webdriver.common.keys import Keys
 
@@ -29,99 +31,99 @@ driver.execute_script("window.open('http://www.tsetmc.com/Loader.aspx?ParTree=15
 
 driver.switch_to_window(driver.window_handles[1])
 element1 = driver.find_element_by_xpath("//a[@class='TopIcon MwIcon MwQuery']")
-driver.implicitly_wait(2)
+time.sleep(2)
 element1.click()
 element2 = driver.find_element_by_xpath("//div[@class='awesome black']")
-driver.implicitly_wait(2)
+time.sleep(2)
 element2.click()
 elememt3 = driver.find_element_by_xpath("//div[@class='awesome tra'][contains(text(),'0')]")
-driver.implicitly_wait(2)
+time.sleep(2)
 elememt3.click()
 elememt4 = driver.find_element_by_xpath("//textarea[@id='InputFilterCode']")
-driver.implicitly_wait(2)
+time.sleep(2)
 elememt4.click()
 pyperclip.copy("(tvol)>(([ih][0].QTotTran5J+[ih][1].QTotTran5J+[ih][2].QTotTran5J+[ih][3].QTotTran5J+[ih][4].QTotTran5J+[ih][5].QTotTran5J+[ih][6].QTotTran5J+[ih][7].QTotTran5J+[ih][8].QTotTran5J+[ih][9].QTotTran5J+[ih][10].QTotTran5J+[ih][11].QTotTran5J+[ih][12].QTotTran5J+[ih][13].QTotTran5J+[ih][14].QTotTran5J+[ih][15].QTotTran5J+[ih][16].QTotTran5J+[ih][17].QTotTran5J+[ih][18].QTotTran5J+[ih][19].QTotTran5J+[ih][20].QTotTran5J+[ih][21].QTotTran5J+[ih][22].QTotTran5J+[ih][23].QTotTran5J+[ih][24].QTotTran5J+[ih][25].QTotTran5J+[ih][26].QTotTran5J+[ih][27].QTotTran5J+[ih][28].QTotTran5J+[ih][29].QTotTran5J)/30)&&((ct).Buy_I_Volume/(ct).Buy_CountI)>=((ct).Sell_I_Volume/(ct).Sell_CountI)&&(pl)>=(pc)&&(plp)>0")
 elememt4.send_keys(Keys.CONTROL,'v')
 elememt5 = driver.find_element_by_xpath("//div[@class='awesome blue']")
-driver.implicitly_wait(2)
+time.sleep(2)
 elememt5.click()
 
 
 driver.switch_to_window(driver.window_handles[2])
 element1 = driver.find_element_by_xpath("//a[@class='TopIcon MwIcon MwQuery']")
-driver.implicitly_wait(2)
+time.sleep(2)
 element1.click()
 element2 = driver.find_element_by_xpath("//div[@class='awesome black']")
-driver.implicitly_wait(2)
+time.sleep(2)
 element2.click()
 elememt3 = driver.find_element_by_xpath("//div[@class='awesome tra'][contains(text(),'0')]")
-driver.implicitly_wait(2)
+time.sleep(2)
 elememt3.click()
 elememt4 = driver.find_element_by_xpath("//textarea[@id='InputFilterCode']")
-driver.implicitly_wait(2)
+time.sleep(2)
 elememt4.click()
 pyperclip.copy("(tvol)>1.25*[is5]&&((ct).Buy_I_Volume/(ct).Buy_CountI)>=((ct).Sell_I_Volume/(ct).Sell_CountI)&&(pl)>=(pc)&&(plp)>0")
 elememt4.send_keys(Keys.CONTROL,'v')
 elememt5 = driver.find_element_by_xpath("//div[@class='awesome blue']")
-driver.implicitly_wait(2)
+time.sleep(2)
 elememt5.click()
 
 driver.switch_to_window(driver.window_handles[3])
 element1 = driver.find_element_by_xpath("//a[@class='TopIcon MwIcon MwQuery']")
-driver.implicitly_wait(2)
+time.sleep(2)
 element1.click()
 element2 = driver.find_element_by_xpath("//div[@class='awesome black']")
-driver.implicitly_wait(2)
+time.sleep(2)
 element2.click()
 elememt3 = driver.find_element_by_xpath("//div[@class='awesome tra'][contains(text(),'0')]")
-driver.implicitly_wait(2)
+time.sleep(2)
 elememt3.click()
 elememt4 = driver.find_element_by_xpath("//textarea[@id='InputFilterCode']")
-driver.implicitly_wait(2)
+time.sleep(2)
 elememt4.click()
 pyperclip.copy("(tvol)>1.5*[is6]&&((ct).Buy_I_Volume/(ct).Buy_CountI)>=((ct).Sell_I_Volume/(ct).Sell_CountI)&&(pl)>=(pc)&&(plp)>0")
 elememt4.send_keys(Keys.CONTROL,'v')
 elememt5 = driver.find_element_by_xpath("//div[@class='awesome blue']")
-driver.implicitly_wait(2)
+time.sleep(2)
 elememt5.click()
 
 
 driver.switch_to_window(driver.window_handles[4])
 element1 = driver.find_element_by_xpath("//a[@class='TopIcon MwIcon MwQuery']")
-driver.implicitly_wait(2)
+time.sleep(2)
 element1.click()
 element2 = driver.find_element_by_xpath("//div[@class='awesome black']")
-driver.implicitly_wait(2)
+time.sleep(2)
 element2.click()
 elememt3 = driver.find_element_by_xpath("//div[@class='awesome tra'][contains(text(),'0')]")
-driver.implicitly_wait(2)
+time.sleep(2)
 elememt3.click()
 elememt4 = driver.find_element_by_xpath("//textarea[@id='InputFilterCode']")
-driver.implicitly_wait(2)
+time.sleep(2)
 elememt4.click()
 pyperclip.copy("(tvol)>(([ih][0].QTotTran5J+[ih][1].QTotTran5J+[ih][2].QTotTran5J+[ih][3].QTotTran5J+[ih][4].QTotTran5J+[ih][5].QTotTran5J+[ih][6].QTotTran5J+[ih][7].QTotTran5J+[ih][8].QTotTran5J+[ih][9].QTotTran5J+[ih][10].QTotTran5J+[ih][11].QTotTran5J+[ih][12].QTotTran5J+[ih][13].QTotTran5J+[ih][14].QTotTran5J+[ih][15].QTotTran5J+[ih][16].QTotTran5J+[ih][17].QTotTran5J+[ih][18].QTotTran5J+[ih][19].QTotTran5J+[ih][20].QTotTran5J+[ih][21].QTotTran5J+[ih][22].QTotTran5J+[ih][23].QTotTran5J+[ih][24].QTotTran5J+[ih][25].QTotTran5J+[ih][26].QTotTran5J+[ih][27].QTotTran5J+[ih][28].QTotTran5J+[ih][29].QTotTran5J)/30)&&((ct).Buy_I_Volume/(ct).Buy_CountI)>=((ct).Sell_I_Volume/(ct).Sell_CountI)&&(pl)>=(pc)&&(plp)>0&&(ct).Buy_I_Volume>0.5*(tvol)&&(ct).Sell_N_Volume>0.5*(tvol)")
 elememt4.send_keys(Keys.CONTROL,'v')
 elememt5 = driver.find_element_by_xpath("//div[@class='awesome blue']")
-driver.implicitly_wait(2)
+time.sleep(2)
 elememt5.click()
 
 driver.switch_to_window(driver.window_handles[5])
 element1 = driver.find_element_by_xpath("//a[@class='TopIcon MwIcon MwQuery']")
-driver.implicitly_wait(2)
+time.sleep(2)
 element1.click()
 element2 = driver.find_element_by_xpath("//div[@class='awesome black']")
-driver.implicitly_wait(2)
+time.sleep(2)
 element2.click()
 elememt3 = driver.find_element_by_xpath("//div[@class='awesome tra'][contains(text(),'0')]")
-driver.implicitly_wait(2)
+time.sleep(2)
 elememt3.click()
 elememt4 = driver.find_element_by_xpath("//textarea[@id='InputFilterCode']")
-driver.implicitly_wait(2)
+time.sleep(2)
 elememt4.click()
 pyperclip.copy("(tvol)>1.25*[is5]&&((ct).Buy_I_Volume/(ct).Buy_CountI)>=((ct).Sell_I_Volume/(ct).Sell_CountI)&&(pl)>=(pc)&&(plp)>0&&(ct).Buy_I_Volume>0.5*(tvol)&&(ct).Sell_N_Volume>0.5*(tvol)")
 elememt4.send_keys(Keys.CONTROL,'v')
 elememt5 = driver.find_element_by_xpath("//div[@class='awesome blue']")
-driver.implicitly_wait(2)
+time.sleep(2)
 elememt5.click()
 
 
@@ -129,42 +131,22 @@ elememt5.click()
 
 driver.switch_to_window(driver.window_handles[6])
 element1 = driver.find_element_by_xpath("//a[@class='TopIcon MwIcon MwQuery']")
-driver.implicitly_wait(2)
+time.sleep(2)
 element1.click()
 element2 = driver.find_element_by_xpath("//div[@class='awesome black']")
-driver.implicitly_wait(2)
+time.sleep(2)
 element2.click()
 elememt3 = driver.find_element_by_xpath("//div[@class='awesome tra'][contains(text(),'0')]")
-driver.implicitly_wait(2)
+time.sleep(2)
 elememt3.click()
 elememt4 = driver.find_element_by_xpath("//textarea[@id='InputFilterCode']")
-driver.implicitly_wait(2)
+time.sleep(2)
 elememt4.click()
 pyperclip.copy("(tvol)>1.5*[is6]&&((ct).Buy_I_Volume/(ct).Buy_CountI)>=((ct).Sell_I_Volume/(ct).Sell_CountI)&&(pl)>=(pc)&&(plp)>0&&(ct).Buy_I_Volume>0.5*(tvol)&&(ct).Sell_N_Volume>0.5*(tvol)")
 elememt4.send_keys(Keys.CONTROL,'v')
 elememt5 = driver.find_element_by_xpath("//div[@class='awesome blue']")
-driver.implicitly_wait(2)
+time.sleep(2)
 elememt5.click()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
