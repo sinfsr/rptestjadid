@@ -2,6 +2,7 @@ import logging
 import os
 from selenium import webdriver
 import time
+import pyperclip
 
 from selenium.webdriver.remote.webelement import WebElement
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
@@ -235,7 +236,7 @@ def error(bot, update, error):
 if __name__ == "__main__":
     # Set these variable to the appropriate values
     TOKEN = "1139770167:AAErOC1_mzcX3mOl671nu2DOTUV9ubh8V28"
-    NAME = "pandatbot2"
+    NAME = "pandatbot3"
 
     # Port is given by Heroku
     PORT = os.environ.get('PORT')
