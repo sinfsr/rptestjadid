@@ -23,18 +23,18 @@ driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), c
 
 
 
-
-###########
-
-
-
-
-
 def start(bot, update):
     bot.send_sticker(chat_id=update.message.chat_id,
                      sticker='CAACAgIAAxkBAAIQGl8HwysLDNIkN92gF1U10eWk_LgtAAI0AgACVp29CjGNzk5PQoF3GgQ')
     update.effective_message.reply_text("سلام!")
-    
+
+
+
+def echo(bot, update):
+    a = update.effective_message.text
+    eslahy = a.replace('ی', 'ي')
+    sahm = eslahy.replace('ک', 'ك')
+
     try:
         update.effective_message.reply_text("1")
         driver.get("http://www.tsetmc.com/Loader.aspx?ParTree=15131F#")
@@ -65,24 +65,8 @@ def start(bot, update):
         elememt5.click()
         update.effective_message.reply_text("fuckin' finish")
         
-
-    except:
-        update.effective_message.reply_text("متاسفانه در انجام پروسه به مشکل خوردیم")
         
-
-    
-    
-    
-    
-
-
-def echo(bot, update):
-    a = update.effective_message.text
-    eslahy = a.replace('ی', 'ي')
-    sahm = eslahy.replace('ک', 'ك')
-    #text = driver.find_element_by_tag_name("body").text
-
-    try:   
+        text = driver.find_element_by_tag_name("body").text
         if sahm in text :
             update.effective_message.reply_text("سهم دارای ورود پول هوشمند است")
         else:
@@ -98,7 +82,7 @@ def error(bot, update, error):
 if __name__ == "__main__":
     # Set these variable to the appropriate values
     TOKEN = "1139770167:AAErOC1_mzcX3mOl671nu2DOTUV9ubh8V28"
-    NAME = "pandabot5"
+    NAME = "pandatbot"
 
     # Port is given by Heroku
     PORT = os.environ.get('PORT')
