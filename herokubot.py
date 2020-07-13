@@ -58,9 +58,9 @@ def echo(bot, update):
     a = update.effective_message.text
     eslahy = a.replace('ی', 'ي')
     sahm = eslahy.replace('ک', 'ك')
+    text = driver.find_element_by_tag_name("body").text
 
-    try:
-        text = driver.find_element_by_tag_name("body").text
+    try:   
         if sahm in text :
             update.effective_message.reply_text("سهم دارای ورود پول هوشمند است")
         else:
