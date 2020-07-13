@@ -22,23 +22,7 @@ driver = webdriver.Chrome(executable_path=os.environ.get("CHROMEDRIVER_PATH"), c
 
 
 
-driver.get("http://www.tsetmc.com/Loader.aspx?ParTree=15131F#")
-time.sleep(2)
-element1 = driver.find_element(By.XPATH , '/html/body/div[6]/div[1]/a[7]')
-time.sleep(2)
-element1.click()  
-element2 = driver.find_element(By.XPATH , '//*[@id="FilterIndex"]/div[1]')
-time.sleep(2)
-element2.click()
-elememt3 = driver.find_element(By.XPATH , '/html/body/div[7]/div[3]/div[1]/div[1]')
-time.sleep(2)
-elememt3.click()
-elememt4 = driver.find_element(By.XPATH , '//*[@id="InputFilterCode"]')
-time.sleep(2)
-elememt4.send_keys('foo')
-elememt5 = driver.find_element(By.XPATH , '//*[@id="FilterContent"]/div[1]')
-time.sleep(2)
-elememt5.click()
+
 
 
 ###########
@@ -51,7 +35,37 @@ def start(bot, update):
     bot.send_sticker(chat_id=update.message.chat_id,
                      sticker='CAACAgIAAxkBAAIQGl8HwysLDNIkN92gF1U10eWk_LgtAAI0AgACVp29CjGNzk5PQoF3GgQ')
     update.effective_message.reply_text("سلام!")
+    try:
+        
+        driver.get("http://www.tsetmc.com/Loader.aspx?ParTree=15131F#")
+        time.sleep(2)
+        update.effective_message.reply_text("1!")
+        element1 = driver.find_element(By.XPATH , '/html/body/div[6]/div[1]/a[7]')
+        time.sleep(2)
+        element1.click()  
+        element2 = driver.find_element(By.XPATH , '//*[@id="FilterIndex"]/div[1]')
+        time.sleep(2)
+        element2.click()
+        update.effective_message.reply_text("2!")
+        elememt3 = driver.find_element(By.XPATH , '/html/body/div[7]/div[3]/div[1]/div[1]')
+        time.sleep(2)
+        elememt3.click()
+        elememt4 = driver.find_element(By.XPATH , '//*[@id="InputFilterCode"]')
+        time.sleep(2)
+        elememt4.send_keys('foo')
+        elememt5 = driver.find_element(By.XPATH , '//*[@id="FilterContent"]/div[1]')
+        time.sleep(2)
+        elememt5.click()
+        
 
+    except:
+        update.effective_message.reply_text("متاسفانه در انجام پروسه به مشکل خوردیم")
+        
+
+    
+    
+    
+    
 
 
 def echo(bot, update):
